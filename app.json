@@ -9,8 +9,12 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.oscarcastillo.breathe"
+      "supportsTablet": false,
+      "bundleIdentifier": "com.oscarcastillo.breathe",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "buildNumber": "2"
     },
     "android": {
       "package": "com.oscarcastillo.breathe",
@@ -52,6 +56,12 @@
     "locales": {
       "es": "./locales/ios-es.json",
       "en": "./locales/ios-en.json"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "79807f78-31bf-45a0-8d68-a3964c6b69bf"
+      }
     }
   }
 }
