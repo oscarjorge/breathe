@@ -1,19 +1,21 @@
 {
   "expo": {
-    "name": "quitSmokingApp",
-    "slug": "quitSmokingApp",
+    "name": "Breathe",
+    "slug": "breathe",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "quitsmokingapp",
-    "userInterfaceStyle": "automatic",
+    "scheme": "breathe",
+    "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.oscarcastillo.breathe"
     },
     "android": {
+      "package": "com.oscarcastillo.breathe",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#114349",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -27,22 +29,29 @@
     },
     "plugins": [
       "expo-router",
+      "expo-font",
+      "expo-localization",
       [
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#faf9f6",
           "dark": {
-            "backgroundColor": "#000000"
+            "backgroundColor": "#1a1c1a"
           }
         }
-      ]
+      ],
+      "@react-native-community/datetimepicker"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "locales": {
+      "es": "./locales/ios-es.json",
+      "en": "./locales/ios-en.json"
     }
   }
 }

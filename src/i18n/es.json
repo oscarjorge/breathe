@@ -1,0 +1,140 @@
+{
+  "app": { "name": "El Respiro" },
+  "tabs": {
+    "home": "Inicio",
+    "achievements": "Logros",
+    "goal": "Objetivo",
+    "settings": "Ajustes"
+  },
+  "onboarding": {
+    "step": "Paso {{current}} de {{total}}",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "finish": "Empezar",
+    "cigsPerDay": {
+      "title": "¿Cuántos cigarrillos fumabas al día?",
+      "hint": "Esta cifra nos ayuda a calcular el dinero y el tiempo de vida que recuperarás.",
+      "placeholder": "20"
+    },
+    "pricePerPack": {
+      "title": "¿Cuánto cuesta tu cajetilla?",
+      "hint": "Lo usamos para mostrar tu ahorro en tiempo real.",
+      "placeholder": "5.20"
+    },
+    "quitDate": {
+      "title": "¿Cuándo lo dejaste?",
+      "hint": "Si lo vas a dejar ahora, deja la fecha actual.",
+      "now": "Ahora mismo",
+      "pick": "Elegir fecha y hora"
+    }
+  },
+  "home": {
+    "greeting": "El Respiro",
+    "timeWithoutSmoking": "Tiempo sin fumar",
+    "encouragement": "¡Excelente progreso, sigue así!",
+    "moneySaved": "Dinero ahorrado",
+    "cigarettesAvoided": "Cigarrillos evitados",
+    "healthRecovery": "Recuperación de salud",
+    "savedYourLungs": "Has salvado tus pulmones",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Mins",
+    "seconds": "Segs"
+  },
+  "achievements": {
+    "title": "Mis Logros",
+    "subtitle": "Cada respiro es una victoria. Sigue sumando pasos hacia tu libertad.",
+    "progressTotal": "Progreso total"
+  },
+  "goal": {
+    "title": "Mi meta personal",
+    "currentSavings": "Ahorros actuales",
+    "completed": "completado",
+    "remaining": "faltan",
+    "edit": "Cambiar objetivo",
+    "create": "Crear objetivo",
+    "save": "Guardar objetivo",
+    "daysWithoutSmoking": "Días sin fumar",
+    "cigsAvoided": "Cigarros evitados",
+    "emptyHint": "Define tu recompensa personal y verás cómo vas alcanzándola.",
+    "editorTitle": "Mi objetivo",
+    "rewardQuestion": "¿Cuál es tu recompensa?",
+    "rewardPlaceholder": "Ej: Viaje a Roma",
+    "costQuestion": "¿Cuánto cuesta?",
+    "pickIcon": "Elige un icono",
+    "heroLabel": "OBJETIVO"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "subtitle": "Mi camino hacia una vida libre",
+    "general": "General",
+    "editData": "Editar datos",
+    "notifications": "Notificaciones",
+    "notifTime": "Hora de notificación",
+    "language": "Idioma",
+    "langValue": "Español",
+    "support": "Apoyo",
+    "relapse": "Recaída",
+    "relapseHelp": "Necesito ayuda ahora mismo",
+    "relapseConfirmMsg": "Esto reiniciará tu contador. Tu intento quedará guardado en el histórico.",
+    "relapseConfirmBtn": "Reiniciar",
+    "resetTitle": "Reiniciar app",
+    "resetMsg": "Se borrarán todos los datos incluyendo el histórico. Esta acción no se puede deshacer.",
+    "resetBtn": "Borrar todo",
+    "resetRow": "Reiniciar todos los datos",
+    "activity": "Mi actividad",
+    "history": "Histórico",
+    "historyTitle": "Histórico de intentos",
+    "historyEmpty": "Sin intentos anteriores. ¡Sigue así!",
+    "share": "Compartir",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "editDataTitle": "Editar datos",
+    "cigsLabel": "Cigarrillos al día",
+    "priceLabel": "Precio cajetilla (€)"
+  },
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar"
+  },
+  "ach": {
+    "categories": {
+      "health": "Salud",
+      "streak": "Constancia",
+      "money": "Ahorro",
+      "cigarettes": "Cigarrillos"
+    },
+    "h_20min":  { "label": "Primeros 20 min",      "desc": "Tu pulso y tensión arterial ya han vuelto a la normalidad." },
+    "h_8h":     { "label": "Sangre más limpia",     "desc": "El monóxido de carbono en tu sangre se ha reducido a la mitad." },
+    "h_12h":    { "label": "Oxígeno al 100%",       "desc": "El nivel de monóxido de carbono vuelve a niveles normales." },
+    "h_24h":    { "label": "Primer día",            "desc": "El riesgo de infarto ya está bajando. Tu corazón te lo agradece." },
+    "h_48h":    { "label": "Olfato y gusto",        "desc": "Vas a redescubrir la comida. Los sentidos están despertando." },
+    "h_72h":    { "label": "Pulmones libres",       "desc": "Los bronquios se relajan y respiras con más facilidad." },
+    "h_2w":     { "label": "Mejor circulación",     "desc": "La circulación mejora y la capacidad pulmonar aumenta." },
+    "h_1m":     { "label": "Tos al mínimo",         "desc": "La tos y la falta de aire han disminuido notablemente." },
+    "h_3m":     { "label": "+30% de capacidad",     "desc": "Tu función pulmonar ha aumentado hasta un 30%." },
+    "h_6m":     { "label": "Menos estrés",          "desc": "Menos estrés, menos infecciones respiratorias. Tu cuerpo está más fuerte." },
+    "h_1y":     { "label": "Un año libre",           "desc": "El riesgo de enfermedad coronaria se ha reducido a la mitad. ¡Increíble!" },
+    "h_5y":     { "label": "Ictus evitado",          "desc": "El riesgo de ictus es ya equiparable al de un no fumador." },
+    "s_1d":     { "label": "Primer día",            "desc": "24 horas sin humo. El primero de muchos." },
+    "s_3d":     { "label": "Tres días",             "desc": "72 horas. La nicotina ya ha abandonado tu cuerpo." },
+    "s_7d":     { "label": "Una semana",            "desc": "7 días enteros. Tu nueva vida ya tiene nombre." },
+    "s_2w":     { "label": "Dos semanas",           "desc": "14 días. Tu piel, tu pelo y tus dientes te lo notan." },
+    "s_1m":     { "label": "Un mes",                "desc": "Un mes es un hito de verdad. Eres más fuerte que el hábito." },
+    "s_3m":     { "label": "Tres meses",            "desc": "90 días de libertad. Tu cuerpo lleva tiempo dándote las gracias." },
+    "s_6m":     { "label": "Seis meses",            "desc": "Medio año sin fumar. Eres un referente para los que te rodean." },
+    "s_1y":     { "label": "Un año",                "desc": "365 días. Feliz aniversario de tu nueva vida." },
+    "m_1":      { "label": "Primer euro",           "desc": "El primero siempre es especial. Ya están llegando." },
+    "m_10":     { "label": "10€ ahorrados",         "desc": "Para un buen café con pastel, sin culpa." },
+    "m_50":     { "label": "50€ ahorrados",         "desc": "Una cena para dos. Te lo mereces." },
+    "m_100":    { "label": "100€ ahorrados",        "desc": "Ya son tres dígitos. El ahorro se acelera." },
+    "m_500":    { "label": "500€ ahorrados",        "desc": "Un vuelo, una escapada, lo que tú quieras." },
+    "m_1000":   { "label": "1.000€ ahorrados",      "desc": "Cuatro cifras. Tus pulmones y tu cuenta bancaria te sonríen." },
+    "c_10":     { "label": "10 no fumados",         "desc": "Diez cigarrillos que eligieron la vida. Buen comienzo." },
+    "c_100":    { "label": "100 no fumados",        "desc": "Cien veces que dijiste no. Cien victorias." },
+    "c_500":    { "label": "500 no fumados",        "desc": "Media cajetilla al día durante un mes entero. Grande." },
+    "c_1000":   { "label": "1.000 no fumados",      "desc": "Mil cigarrillos que se quedaron en la cajetilla." },
+    "c_5000":   { "label": "5.000 no fumados",      "desc": "Número cinco con tres ceros. Una hazaña de verdad." }
+  }
+}

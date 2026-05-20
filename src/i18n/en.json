@@ -1,0 +1,140 @@
+{
+  "app": { "name": "Breathe" },
+  "tabs": {
+    "home": "Home",
+    "achievements": "Achievements",
+    "goal": "Goal",
+    "settings": "Settings"
+  },
+  "onboarding": {
+    "step": "Step {{current}} of {{total}}",
+    "next": "Next",
+    "back": "Back",
+    "finish": "Start",
+    "cigsPerDay": {
+      "title": "How many cigarettes did you smoke per day?",
+      "hint": "We use this to calculate the money and lifetime you'll get back.",
+      "placeholder": "20"
+    },
+    "pricePerPack": {
+      "title": "How much does a pack cost?",
+      "hint": "We use this to show your real-time savings.",
+      "placeholder": "5.20"
+    },
+    "quitDate": {
+      "title": "When did you quit?",
+      "hint": "If you are quitting now, leave the current date.",
+      "now": "Right now",
+      "pick": "Pick date & time"
+    }
+  },
+  "home": {
+    "greeting": "Breathe",
+    "timeWithoutSmoking": "Smoke-free time",
+    "encouragement": "Excellent progress, keep it up!",
+    "moneySaved": "Money saved",
+    "cigarettesAvoided": "Cigarettes avoided",
+    "healthRecovery": "Health recovery",
+    "savedYourLungs": "You saved your lungs",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Mins",
+    "seconds": "Secs"
+  },
+  "achievements": {
+    "title": "My Achievements",
+    "subtitle": "Every breath is a victory. Keep adding steps toward your freedom.",
+    "progressTotal": "Total progress"
+  },
+  "goal": {
+    "title": "My personal goal",
+    "currentSavings": "Current savings",
+    "completed": "completed",
+    "remaining": "remaining",
+    "edit": "Change goal",
+    "create": "Create goal",
+    "save": "Save goal",
+    "daysWithoutSmoking": "Smoke-free days",
+    "cigsAvoided": "Cigarettes avoided",
+    "emptyHint": "Set your personal reward and watch yourself reach it.",
+    "editorTitle": "My goal",
+    "rewardQuestion": "What's your reward?",
+    "rewardPlaceholder": "E.g. Trip to Rome",
+    "costQuestion": "How much does it cost?",
+    "pickIcon": "Pick an icon",
+    "heroLabel": "GOAL"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "My path to a free life",
+    "general": "General",
+    "editData": "Edit data",
+    "notifications": "Notifications",
+    "notifTime": "Notification time",
+    "language": "Language",
+    "langValue": "English",
+    "support": "Support",
+    "relapse": "Relapse",
+    "relapseHelp": "I need help right now",
+    "relapseConfirmMsg": "This will reset your counter. Your attempt will be saved in history.",
+    "relapseConfirmBtn": "Reset",
+    "resetTitle": "Reset app",
+    "resetMsg": "All data including history will be deleted. This cannot be undone.",
+    "resetBtn": "Delete all",
+    "resetRow": "Reset all data",
+    "activity": "My activity",
+    "history": "History",
+    "historyTitle": "Attempt history",
+    "historyEmpty": "No previous attempts. Keep it up!",
+    "share": "Share",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "editDataTitle": "Edit data",
+    "cigsLabel": "Cigarettes per day",
+    "priceLabel": "Price per pack"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "ach": {
+    "categories": {
+      "health": "Health",
+      "streak": "Streak",
+      "money": "Savings",
+      "cigarettes": "Cigarettes"
+    },
+    "h_20min":  { "label": "First 20 min",          "desc": "Your pulse and blood pressure are back to normal." },
+    "h_8h":     { "label": "Cleaner blood",          "desc": "Carbon monoxide in your blood has dropped by half." },
+    "h_12h":    { "label": "100% oxygen",            "desc": "Carbon monoxide is back to normal levels." },
+    "h_24h":    { "label": "First day",              "desc": "Your heart attack risk is already going down." },
+    "h_48h":    { "label": "Taste & smell back",     "desc": "You're about to rediscover food." },
+    "h_72h":    { "label": "Clear lungs",            "desc": "Your bronchial tubes are relaxing. Breathing is easier." },
+    "h_2w":     { "label": "Better circulation",     "desc": "Circulation improves and lung capacity is increasing." },
+    "h_1m":     { "label": "Less coughing",          "desc": "Coughing and shortness of breath have noticeably decreased." },
+    "h_3m":     { "label": "+30% capacity",          "desc": "Your lung function has increased by up to 30%." },
+    "h_6m":     { "label": "Less stress",            "desc": "Less stress and fewer respiratory infections." },
+    "h_1y":     { "label": "One year free",          "desc": "Your coronary heart disease risk has halved. Incredible!" },
+    "h_5y":     { "label": "Stroke avoided",         "desc": "Your stroke risk now matches a non-smoker's." },
+    "s_1d":     { "label": "First day",              "desc": "24 smoke-free hours. The first of many." },
+    "s_3d":     { "label": "Three days",             "desc": "72 hours. Nicotine has left your body." },
+    "s_7d":     { "label": "One week",               "desc": "7 full days. Your new life has a name." },
+    "s_2w":     { "label": "Two weeks",              "desc": "14 days. Your skin, hair and teeth are noticing." },
+    "s_1m":     { "label": "One month",              "desc": "A month is a real milestone. You're stronger than the habit." },
+    "s_3m":     { "label": "Three months",           "desc": "90 days of freedom. Your body has been grateful for a while." },
+    "s_6m":     { "label": "Six months",             "desc": "Half a year. You're an inspiration to those around you." },
+    "s_1y":     { "label": "One year",               "desc": "365 days. Happy anniversary of your new life." },
+    "m_1":      { "label": "First dollar saved",     "desc": "The first one is always special." },
+    "m_10":     { "label": "$10 saved",              "desc": "For a nice coffee and cake, guilt-free." },
+    "m_50":     { "label": "$50 saved",              "desc": "A dinner for two. You deserve it." },
+    "m_100":    { "label": "$100 saved",             "desc": "Three digits already. The savings are accelerating." },
+    "m_500":    { "label": "$500 saved",             "desc": "A flight, a trip, whatever you want." },
+    "m_1000":   { "label": "$1,000 saved",           "desc": "Four figures. Your lungs and bank account are smiling." },
+    "c_10":     { "label": "10 not smoked",          "desc": "Ten cigarettes that chose life. Good start." },
+    "c_100":    { "label": "100 not smoked",         "desc": "A hundred times you said no. A hundred wins." },
+    "c_500":    { "label": "500 not smoked",         "desc": "Half a pack a day for a whole month. Great." },
+    "c_1000":   { "label": "1,000 not smoked",       "desc": "A thousand cigarettes that stayed in the pack." },
+    "c_5000":   { "label": "5,000 not smoked",       "desc": "Five thousand. A true feat." }
+  }
+}
