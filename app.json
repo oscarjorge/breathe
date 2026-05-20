@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Breathe",
-    "slug": "breathe",
+    "name": "FreeBreath",
+    "slug": "freebreath",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "breathe",
+    "scheme": "freebreath",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "ios": {
