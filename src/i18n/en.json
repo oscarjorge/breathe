@@ -89,6 +89,9 @@
     "share": "Share",
     "legal": "Legal",
     "privacy": "Privacy",
+    "sources": "Medical sources",
+    "sourcesTitle": "Medical sources",
+    "sourcesDesc": "The health milestones in this app are based on published medical research. See the original sources:",
     "editDataTitle": "Edit data",
     "cigsLabel": "Cigarettes per day",
     "priceLabel": "Price per pack"

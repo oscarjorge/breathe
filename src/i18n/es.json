@@ -89,6 +89,9 @@
     "share": "Compartir",
     "legal": "Legal",
     "privacy": "Privacidad",
+    "sources": "Fuentes médicas",
+    "sourcesTitle": "Fuentes médicas",
+    "sourcesDesc": "Los hitos de salud de esta app están basados en investigación médica publicada. Consulta las fuentes originales:",
     "editDataTitle": "Editar datos",
     "cigsLabel": "Cigarrillos al día",
     "priceLabel": "Precio cajetilla (€)"

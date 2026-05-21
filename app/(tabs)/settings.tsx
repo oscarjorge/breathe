@@ -1,4 +1,4 @@
-import { Alert, Modal, Platform, Pressable, ScrollView, Share, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
+import { Alert, Linking, Modal, Platform, Pressable, ScrollView, Share, StyleSheet, Switch, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
@@ -15,6 +15,7 @@ export default function Settings() {
   const { data, update, reset, relapse } = useUserData();
   const [showEditModal, setShowEditModal] = useState(false);
   const [showHistoryModal, setShowHistoryModal] = useState(false);
+  const [showSourcesModal, setShowSourcesModal] = useState(false);
   const [showTimePicker, setShowTimePicker] = useState(false);
 
   if (!data) return null;
@@ -132,7 +133,8 @@ export default function Settings() {
         {/* LEGAL */}
         <Text style={styles.section}>{t('settings.legal')}</Text>
         <View style={styles.group}>
-          <Row icon="shield-outline" label={t('settings.privacy')} onPress={() => {}} />
+          <Row icon="shield-outline" label={t('settings.privacy')} onPress={() => Linking.openURL('https://oscarjorge.github.io/breathe/privacy-policy.html')} />
+          <Row icon="library-outline" label={t('settings.sources')} onPress={() => setShowSourcesModal(true)} />
         </View>
 
         {/* DEBUG */}
@@ -170,6 +172,12 @@ export default function Settings() {
         onClose={() => setShowHistoryModal(false)}
         history={data.history}
         locale={locale}
+      />
+
+      {/* Sources modal */}
+      <SourcesModal
+        visible={showSourcesModal}
+        onClose={() => setShowSourcesModal(false)}
       />
     </SafeAreaView>
   );
@@ -305,6 +313,42 @@ function HistoryModal({
   );
 }
 
+const SOURCES = [
+  { label: 'CDC – Benefits of Quitting Smoking', url: 'https://www.cdc.gov/tobacco/quit_smoking/how_to_quit/benefits/index.htm' },
+  { label: 'NHS – Benefits of Quitting Smoking', url: 'https://www.nhs.uk/live-well/quit-smoking/benefits-of-quitting-smoking/' },
+  { label: 'American Cancer Society – Benefits Over Time', url: 'https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking/benefits-of-quitting-smoking-over-time.html' },
+  { label: 'WHO – Tobacco Fact Sheet', url: 'https://www.who.int/news-room/fact-sheets/detail/tobacco' },
+];
+
+function SourcesModal({ visible, onClose }: { visible: boolean; onClose: () => void }) {
+  const { t } = useTranslation();
+  return (
+    <Modal visible={visible} animationType="slide" presentationStyle="pageSheet" onRequestClose={onClose}>
+      <SafeAreaView style={styles.modalSafe} edges={['top', 'bottom']}>
+        <View style={styles.modalHeader}>
+          <Text style={styles.modalTitle}>{t('settings.sourcesTitle')}</Text>
+          <Pressable onPress={onClose} hitSlop={12}>
+            <Ionicons name="close" size={28} color={colors.onSurface} />
+          </Pressable>
+        </View>
+        <ScrollView contentContainerStyle={styles.modalContent}>
+          <Text style={[styles.rowSub, { marginBottom: spacing.xl }]}>{t('settings.sourcesDesc')}</Text>
+          {SOURCES.map((s) => (
+            <Pressable
+              key={s.url}
+              style={({ pressed }) => [styles.sourceItem, pressed && { opacity: 0.6 }]}
+              onPress={() => Linking.openURL(s.url)}
+            >
+              <Ionicons name="open-outline" size={18} color={colors.primary} style={{ marginRight: spacing.md }} />
+              <Text style={[styles.rowLabel, { flex: 1, color: colors.primary }]}>{s.label}</Text>
+            </Pressable>
+          ))}
+        </ScrollView>
+      </SafeAreaView>
+    </Modal>
+  );
+}
+
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.background },
   content: { padding: layout.containerPadding, paddingBottom: 120 },
@@ -386,4 +430,11 @@ const styles = StyleSheet.create({
   },
   historyDate: { ...typography.bodySm, color: colors.onSurfaceVariant },
   historyDuration: { ...typography.titleMd, color: colors.primary, marginTop: 2 },
+  sourceItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: spacing.lg,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.outlineVariant,
+  },
 });
